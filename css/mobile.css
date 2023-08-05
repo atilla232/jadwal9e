@@ -1,4 +1,8 @@
 @media (max-width: 768px) {
+  .nav::before {
+    font-size: 1.2em;
+  }
+
   .main {
     display: block;
     width: 100vw;

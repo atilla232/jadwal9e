@@ -87,9 +87,6 @@ a:hover .icon2 {
   transform: rotate(30deg);
 }
 
-.slide-in:target a .icon2 {
-}
-
 .slide-in {
   position: fixed;
   right: -200px;
@@ -99,6 +96,7 @@ a:hover .icon2 {
   background: rgb(20, 18, 18);
   z-index: -999;
   box-sizing: border-box;
+  border: 1px solid grey;
 }
 .slide-in:target {
   right: 0px;
@@ -109,6 +107,18 @@ a:hover .icon2 {
   width: 100%;
   height: 40px;
   background-color: black;
+}
+
+.slide-in::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: -5px;
+  width: 0;
+  height: 39px;
+  border: 20px solid black; /* Border bagian kiri berwarna hitam */
+  border-top: none; /* Hilangkan border atas */
+  border-bottom: none;
 }
 
 /* isi hamburger menu */
