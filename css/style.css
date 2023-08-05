@@ -71,18 +71,25 @@ a .icon2 {
   top: 5px;
   right: 220px;
   z-index: 999;
+  transition: 50ms;
 }
 a:hover .icon2 {
   fill: white;
 }
 .slide-in:target a .icon2 {
   right: 20px;
+  transform: rotate(0deg);
 }
 
 .icon2 {
   position: fixed;
   fill: rgb(241, 206, 8);
+  transform: rotate(30deg);
 }
+
+.slide-in:target a .icon2 {
+}
+
 .slide-in {
   position: fixed;
   right: -200px;
@@ -141,7 +148,6 @@ a:hover .icon2 {
 .isi-jadwal {
   z-index: 44;
   background-color: rgb(19, 18, 18);
-  opacity: ;
   padding: 20px;
   padding-left: 40px;
   box-sizing: border-box;
@@ -175,7 +181,6 @@ a:hover .icon2 {
 }
 /* sidebar */
 .container2 {
-  /* position: absolute; */
   background-color: rgb(19, 18, 18);
   border-radius: 10px;
   width: 25vw;
