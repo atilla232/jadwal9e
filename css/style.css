@@ -97,6 +97,7 @@ a:hover .icon2 {
   z-index: -999;
   box-sizing: border-box;
   border: 1px solid grey;
+  border-top: none;
 }
 .slide-in:target {
   right: 0px;
