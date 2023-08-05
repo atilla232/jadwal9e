@@ -1,0 +1,27 @@
+@media (max-width: 768px) {
+  .main {
+    display: block;
+    width: 100vw;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 0;
+  }
+  .daf {
+    display: block;
+  }
+  .isi-jadwal {
+    display: block;
+    margin-left: 0;
+    width: 90vw;
+  }
+
+  .container2 {
+    height: auto;
+    width: 100vw;
+    margin-bottom: 0;
+    box-shadow: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+}

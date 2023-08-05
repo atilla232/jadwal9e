@@ -1,0 +1,211 @@
+@font-face {
+  font-family: "exo_2regular";
+  src: url(../font/exo2-variablefont_wght-webfont.woff2") format("woff2"),
+    url("../font/exo2-variablefont_wght-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* body */
+html {
+  scroll-behavior: smooth; /* Transisi scroll halus */
+  scroll-behavior: ;
+}
+
+body {
+  background-color: lightgrey;
+  font-family: "EXO-2", Arial, Helvetica, sans-serif;
+  font: 16px/38px;
+  overflow-x: hidden;
+}
+
+/* nav */
+nav {
+  background-color: black;
+  top: 0;
+  height: 40px;
+  width: 100vw;
+  padding-right: 30px;
+  padding-top: 12px;
+  color: white;
+  font-weight: bold;
+  font-size: 1em;
+  position: fixed;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: flex-end;
+  text-align: left;
+  z-index: 999;
+  box-sizing: border-box;
+  box-shadow: 0px 1px 10px 1px rgba(211, 211, 211, 0.3);
+  color: white;
+}
+
+nav::before {
+  content: "JADWAL 9E";
+  position: fixed;
+  font-size: 1.5em;
+  left: 30px;
+  top: 7px;
+  color: rgb(241, 206, 8);
+}
+
+/* hamburger menu */
+
+a .icon {
+  position: fixed;
+  top: 5px;
+  right: 20px;
+  z-index: 999;
+}
+a:hover .icon {
+  fill: rgb(241, 206, 8);
+}
+
+.icon {
+  position: fixed;
+  fill: white;
+}
+a .icon2 {
+  position: absolute;
+  top: 5px;
+  right: 220px;
+  z-index: 999;
+}
+a:hover .icon2 {
+  fill: white;
+}
+.slide-in:target a .icon2 {
+  right: 20px;
+}
+
+.icon2 {
+  position: fixed;
+  fill: rgb(241, 206, 8);
+}
+.slide-in {
+  position: fixed;
+  right: -200px;
+  width: 150px;
+  height: 300px;
+  transition: 500ms;
+  background: rgb(20, 18, 18);
+  z-index: -999;
+  box-sizing: border-box;
+}
+.slide-in:target {
+  right: 0px;
+  z-index: 1000;
+}
+
+.slide-in .warna {
+  width: 100%;
+  height: 40px;
+  background-color: black;
+}
+
+/* isi hamburger menu */
+.list {
+  text-align: center;
+  padding: 15px;
+}
+
+.list::before {
+  content: "JADWAL";
+  font-size: 1.2em;
+  color: rgb(241, 206, 8);
+}
+.list ul li {
+  padding-bottom: 10px;
+}
+.list ul li a {
+  font-family: "EXO-2", Arial, Helvetica, sans-serif;
+  letter-spacing: 2px;
+  font-size: 20px;
+  color: white;
+  text-decoration: none;
+}
+.list ul li a:hover {
+  color: rgb(241, 206, 8);
+}
+.daf {
+  display: none;
+}
+/* elemen  */
+.container {
+  width: 60vw;
+  border: 1 solid gray;
+  padding: 20px;
+}
+
+.isi-jadwal {
+  z-index: 44;
+  background-color: rgb(19, 18, 18);
+  opacity: ;
+  padding: 20px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  color: white;
+  width: 60vw;
+  border-radius: 10px;
+  box-shadow: 0px 1px 10px 1px rgb(241, 206, 8);
+  transition: 500ms;
+  margin-top: 20px;
+  animation: animasi 800ms ease forwards;
+}
+
+.isi-jadwal h1 {
+  font-size: 25px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.isi-jadwal ul li {
+  list-style-type: disc;
+  padding-bottom: 5px;
+}
+
+.main {
+  position: absolute;
+  width: 100vw;
+  top: 50px;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  padding: 20px;
+  height: 100vh;
+}
+/* sidebar */
+.container2 {
+  /* position: absolute; */
+  background-color: rgb(19, 18, 18);
+  border-radius: 10px;
+  width: 25vw;
+  margin-top: 35px;
+  box-sizing: border-box;
+  padding: 20px;
+  box-shadow: 0px 1px 10px 1px rgb(241, 206, 8);
+  color: white;
+  height: auto;
+}
+
+.container2 h1 {
+  font-size: 1.875em;
+  font-weight: bold;
+}
+
+.container2 ul li {
+  padding-bottom: 20px;
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+/* animation  */
+
+@keyframes animasi {
+  0% {
+    transform: translateX(-900%); /* Mulai dari luar layar sebelah kiri */
+  }
+
+  100% {
+    transform: translateX(0); /* Mulai dari luar layar sebelah kiri */
+  }
+}
