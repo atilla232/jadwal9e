@@ -1,0 +1,15 @@
+#selasa {
+  animation: animasi 920ms ease forwards;
+}
+
+#rabu {
+  animation: animasi 940ms ease forwards;
+}
+
+#kamis {
+  animation: animasi 960ms ease forwards;
+}
+
+#jumat {
+  animation: animasi 980ms ease forwards;
+}

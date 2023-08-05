@@ -71,6 +71,7 @@ a .icon2 {
   top: 5px;
   right: 220px;
   z-index: 999;
+  transition: 50ms;
 }
 a:hover .icon2 {
   fill: white;
