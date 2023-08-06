@@ -33,44 +33,19 @@
   }
 
   /* footer mobile */
-  footer {
-    height: 80px;
+  .foot {
+    height: 60px;
     border-top: 1px solid lightgray;
+    padding: 10px;
   }
 
-  footer h1 {
+  footer .name {
     font-size: 0.9em;
   }
-
-  footer ul li a svg {
+  footer ul li a .svg {
     fill: white;
-    height: 6px;
-    width: 6px;
-  }
-
-  .footer2 {
-    padding: 5px;
-    margin-top: 0;
-    display: block;
-  }
-
-  .footer2 {
-    background-color: black;
-    width: 100vw;
-    height: 30px;
-    padding: 10px;
-    color: white;
-    text-align: center;
-    box-sizing: border-box;
-    grid-column: 1 / span2;
-    border: none;
-    margin-top: auto;
-  }
-
-  .footer2 h1::after {
-    content: "Made By atilla";
-    font-size: 12px;
-    opacity: 0.9;
+    height: 20px;
+    width: 20px;
   }
 }
 
