@@ -6,6 +6,8 @@
   .main {
     display: block;
     width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
     padding-top: 0;
     padding-right: 0;
     padding-left: 0;
@@ -15,7 +17,6 @@
     display: block;
   }
   .isi-jadwal {
-    display: block;
     margin-left: 0;
     width: 90vw;
     box-shadow: none;
@@ -29,5 +30,84 @@
     box-shadow: none;
     border-bottom-left-radius: 0;
     border-bottom-right-radius: 0;
+  }
+
+  /* footer mobile */
+  footer {
+    height: 80px;
+  }
+
+  footer h1 {
+    font-size: 0.9em;
+  }
+
+  footer ul li a svg {
+    fill: white;
+    height: 6px;
+    width: 6px;
+  }
+
+  .footer2 {
+    padding: 5px;
+    margin-top: 0;
+    display: block;
+  }
+
+  .footer2 {
+    background-color: black;
+    width: 100vw;
+    height: 30px;
+    padding: 10px;
+    color: white;
+    text-align: center;
+    box-sizing: border-box;
+    grid-column: 1 / span2;
+    border: none;
+    margin-top: auto;
+  }
+
+  .footer2 h1::after {
+    content: "Made By atilla";
+    font-size: 12px;
+    opacity: 0.9;
+  }
+}
+
+@media (min-height: 1000px) {
+  .container2 {
+    height: fit-content;
+    width: 25vw;
+    margin-bottom: 0;
+    box-shadow: none;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+  .main {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 0.45fr;
+    grid-template-rows: 1fr 80px 20px;
+  }
+  footer {
+    height: 80px;
+    grid-row: 2;
+  }
+
+  footer h1 {
+    font-size: 1em;
+  }
+
+  footer ul li a svg {
+    fill: white;
+    height: 8px;
+    width: 8px;
+  }
+
+  .footer {
+    grid-row: 3;
   }
 }

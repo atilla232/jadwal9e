@@ -158,6 +158,7 @@ a:hover .icon2 {
 .isi-jadwal {
   z-index: 44;
   background-color: rgb(19, 18, 18);
+  margin-left: 20px;
   padding: 20px;
   padding-left: 40px;
   box-sizing: border-box;
@@ -185,9 +186,12 @@ a:hover .icon2 {
   width: 100vw;
   top: 50px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 1fr 0.45fr;
+  grid-template-rows: 1fr 1fr 20px;
   padding: 20px;
+  padding-left: 0;
   height: 100vh;
+  min-height: 100vh;
 }
 /* sidebar */
 .container2 {
@@ -199,7 +203,8 @@ a:hover .icon2 {
   padding: 20px;
   box-shadow: 0px 1px 10px 1px rgb(241, 206, 8);
   color: white;
-  height: auto;
+  height: fit-content;
+  min-height: fit-content;
 }
 
 .container2 h1 {
