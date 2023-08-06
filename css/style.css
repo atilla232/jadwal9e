@@ -1,7 +1,6 @@
 @font-face {
   font-family: "exo_2regular";
-  src: url(../font/exo2-variablefont_wght-webfont.woff2") format("woff2"),
-    url("../font/exo2-variablefont_wght-webfont.woff") format("woff");
+  src: url(../font/exo2-variablefont_wght-webfont.woff2) format(.woff2);
   font-weight: normal;
   font-style: normal;
 }
